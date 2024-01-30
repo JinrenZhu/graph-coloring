@@ -11,7 +11,7 @@ from dwave.inspector import show
 nel = 8
 nen = nel + 1
 n_real = nen - 2
-n_encode = 2
+n_encode = 3
 n_bin = n_real * n_encode
 
 # Sampler
