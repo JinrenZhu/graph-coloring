@@ -15,9 +15,9 @@ n_encode = 2
 n_bin = n_real * n_encode
 
 # Sampler
-QA_n_reads = 2400
+QA_n_reads = 2000
 QA_sample_rtol = 1.0e-4
-QA_chain_strength = 500
+QA_chain_strength = 2500
 QA_time = 200
 
 # suffix
