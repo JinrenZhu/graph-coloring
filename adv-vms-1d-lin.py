@@ -18,7 +18,7 @@ n_bin = n_real * n_encode
 QA_n_reads = 5000
 QA_sample_rtol = 1.0e-4
 QA_chain_strength = 2500
-QA_time = 25
+QA_time = 10
 
 itest = 1
 
