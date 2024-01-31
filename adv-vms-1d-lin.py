@@ -15,12 +15,12 @@ n_encode = 3
 n_bin = n_real * n_encode
 
 # Sampler
-QA_n_reads = 2500
+QA_n_reads = 5000
 QA_sample_rtol = 1.0e-4
 QA_chain_strength = 2500
-QA_time = 100
+QA_time = 25
 
-itest = 3
+itest = 1
 
 # suffix
 sffx_1 = str(n_real).zfill(2)
