@@ -15,10 +15,12 @@ n_encode = 3
 n_bin = n_real * n_encode
 
 # Sampler
-QA_n_reads = 2000
+QA_n_reads = 2500
 QA_sample_rtol = 1.0e-4
 QA_chain_strength = 2500
-QA_time = 200
+QA_time = 100
+
+itest = 3
 
 # suffix
 sffx_1 = str(n_real).zfill(2)
@@ -26,9 +28,11 @@ sffx_2 = str(n_encode).zfill(2)
 sffx_3 = str(QA_n_reads).zfill(5)
 sffx_4 = str(QA_chain_strength).zfill(4)
 sffx_5 = str(QA_time).zfill(4)
+sffx_6 = str(itest).zfill(2)
 
 sffx_12 = sffx_1 + '_' + sffx_2 + '.npy'
-sffx_all = sffx_1 + '_' + sffx_2 + '_' + sffx_3 + '_' + sffx_4 + '_' + sffx_5 + '.npy'
+sffx_all = sffx_1 + '_' + sffx_2 + '_' + sffx_3 + '_' \
+    + sffx_4 + '_' + sffx_5 + '_' + sffx_6 + '.npy'
 
 # %% load QUBO coefficients
 cov_matrix_off = np.load('vms-QUBO/cov_mat_off_' + sffx_12)
