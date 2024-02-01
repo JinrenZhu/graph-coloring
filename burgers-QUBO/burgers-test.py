@@ -8,7 +8,7 @@ from dwave.samplers import SimulatedAnnealingSampler
 from dwave.inspector import show
 
 # %% parameters
-nel = 6
+nel = 5
 nen = nel + 1
 n_real = nen - 2
 n_encode = 2
@@ -18,10 +18,10 @@ n_iter = 0
 # Sampler
 QA_n_reads = 2500
 QA_sample_rtol = 1.0e-4
-QA_chain_strength = 420
+QA_chain_strength = 200
 QA_time = 100
 
-itest = 9
+itest = 7
 
 # suffix
 sffx_1 = str(n_real).zfill(2)
