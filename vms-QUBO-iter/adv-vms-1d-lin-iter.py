@@ -13,15 +13,15 @@ nen = nel + 1
 n_real = nen - 2
 n_encode = 3
 n_bin = n_real * n_encode
-n_iter = 3
+n_iter = 4
 
 # Sampler
-QA_n_reads = 2000
+QA_n_reads = 2500
 QA_sample_rtol = 1.0e-4
-QA_chain_strength = 3.0
-QA_time = 300
+QA_chain_strength = 0.2
+QA_time = 200
 
-itest = 10
+itest = 2
 
 # suffix
 sffx_1 = str(n_real).zfill(2)
@@ -53,9 +53,10 @@ sampleset_QA = samplerQA.sample(bqm_adv,
                                 chain_strength=QA_chain_strength,
                                 label='Adv-VMS-3bits-1')
 
-show(sampleset_QA) 
-
 print(sampleset_QA.first)
 print(len(sampleset_QA.lowest(rtol=QA_sample_rtol))/len(sampleset_QA))
 
 np.save('QA_samples_' + sffx_all, sampleset_QA.record)
+
+# %% post
+show(sampleset_QA) 
